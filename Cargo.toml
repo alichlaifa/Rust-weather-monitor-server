@@ -3,7 +3,6 @@ name = "weather"
 version = "0.1.0"
 authors = ["Ali Chlaifa <alichlaifa@gmail.com>"]
 edition = "2021"
-license = "MIT"
 
 [dependencies]
 cxx = "1.0.95"
