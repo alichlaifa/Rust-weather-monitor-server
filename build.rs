@@ -1,7 +1,5 @@
 use cxx_qt_build::{CxxQtBuilder, QmlModule};
 
-
-
 fn main() {
     CxxQtBuilder::new()
         .qt_module("Network")

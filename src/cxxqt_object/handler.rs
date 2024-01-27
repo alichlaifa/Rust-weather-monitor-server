@@ -41,7 +41,7 @@ pub fn handle_connection(mut stream: TcpStream) -> (f32, f32) {
 }
 
 
-pub fn get_final_temperature() -> f32 {
+pub fn get_temperature() -> f32 {
     let address = format!("{}:{}", IP, PORT);
     let listener = TcpListener::bind(&address).unwrap();
 
@@ -53,7 +53,7 @@ pub fn get_final_temperature() -> f32 {
     0.0
 }
 
-pub fn get_final_humidity() -> f32 {
+pub fn get_humidity() -> f32 {
     let address = format!("{}:{}", IP, PORT);
     let listener = TcpListener::bind(&address).unwrap();
 

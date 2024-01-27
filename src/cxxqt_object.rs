@@ -1,4 +1,4 @@
-use self::handler::{get_final_humidity, get_final_temperature};
+use self::handler::{get_humidity, get_temperature};
 
 mod config;
 mod handler;
@@ -37,9 +37,9 @@ pub struct MyObjectRust {
 
 impl qobject::MyObject {
     pub fn temp(&self) -> f32{
-        get_final_temperature()
+        get_temperature()
     }
     pub fn hum(&self) -> f32{
-        get_final_humidity()
+        get_humidity()
     }
 }
